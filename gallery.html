@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Gallery - Mount Makiling</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        .carousel-item {
+            text-align: center;
+            padding: 40px 0;
+        }
+
+        .carousel-item img {
+            width: 100%;
+            max-width: 900px;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 12px;
+            margin: 0 auto;
+            display: block;
+            box-shadow: 0 4px 16px rgba(0, 0, 0, 0.25);
+        }
+
+        .photo-title {
+            font-weight: 700;
+            font-size: 20px;
+            margin-top: 20px;
+            color: #0b4f29;
+        }
+
+        .photo-info {
+            font-size: 15px;
+            color: #2f3e46;
+            max-width: 75%;
+            margin: 8px auto 0;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(1) drop-shadow(0 0 2px #000);
+        }
+
+        .carousel-indicators [data-bs-target] {
+            background-color: #198754;
+        }
+
+        .carousel-indicators {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="index.html">Mount Makiling</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="gallery.html">Gallery</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container py-5">
+        <h2 class="text-center mb-4 text-success fw-bold">📸 Photo Gallery</h2>
+
+        <div id="makilingCarousel" class="carousel slide" data-bs-ride="false">
+            <div class="carousel-inner">
+
+                <div class="carousel-item active">
+                    <img src="mt.makiling_Best Picture.jpg" alt="Mount Makiling">
+                    <p class="photo-title">Mount Makiling Summit</p>
+                    <p class="photo-info">The mystical peak believed to be home of the guardian spirit Maria Makiling.</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="mt.makiling_Agila Base.jpg" alt="Agila Base">
+                    <p class="photo-title">Agila Base</p>
+                    <p class="photo-info">A popular starting point for hikers, marked by a large eagle statue.</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="mt.makiling_Peak 2 Summit.jpg" alt="Peak 2">
+                    <p class="photo-title">Peak 2 - Summit</p>
+                    <p class="photo-info">The higher peak of Makiling, offering panoramic views of Laguna and Batangas.</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="mt.makiling_Makiling Botanic Gardens.jpg" alt="Botanic Gardens">
+                    <p class="photo-title">UPLB Botanical Gardens</p>
+                    <p class="photo-info">A conservation park showcasing Philippine native plants and biodiversity.</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="mt.makiling_BSP Jamboree Site.jpg" alt="BSP Camp">
+                    <p class="photo-title">BSP Jamboree Site</p>
+                    <p class="photo-info">A historic campsite widely used for national scouting events.</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="mt.makiling_Flat Rocks.jpg" alt="Flat Rocks">
+                    <p class="photo-title">Flat Rocks</p>
+                    <p class="photo-info">A scenic rocky stream area perfect for relaxation and photography.</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="mt.makiling_Lush Forest Trails.jpg" alt="Forest Trails">
+                    <p class="photo-title">Lush Forest Trails</p>
+                    <p class="photo-info">Dense vegetation rich with native wildlife and rare plant species.</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="mt.makiling_MNH Centennial Trail.jpg" alt="Centennial Trail">
+                    <p class="photo-title">MNH Centennial Trail</p>
+                    <p class="photo-info">The most common hiking route leading from UPLB.</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="mt.makiling_Mudspring.jpg" alt="Mud Springs">
+                    <p class="photo-title">Mud Springs</p>
+                    <p class="photo-info">Boiling sulfuric mud pots indicating the mountain’s volcanic origins.</p>
+                </div>
+
+                <div class="carousel-item">
+                    <img src="mt.makiling_Pook ni Maria Makiling.jpg" alt="Pook ni Maria">
+                    <p class="photo-title">Pook ni Maria Makiling</p>
+                    <p class="photo-info">A tranquil park honoring the legendary diwata who guards Makiling.</p>
+                </div>
+
+            </div>
+
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#makilingCarousel" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#makilingCarousel" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#makilingCarousel" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#makilingCarousel" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#makilingCarousel" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#makilingCarousel" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#makilingCarousel" data-bs-slide-to="6"></button>
+                <button type="button" data-bs-target="#makilingCarousel" data-bs-slide-to="7"></button>
+                <button type="button" data-bs-target="#makilingCarousel" data-bs-slide-to="8"></button>
+                <button type="button" data-bs-target="#makilingCarousel" data-bs-slide-to="9"></button>
+            </div>
+
+            <button class="carousel-control-prev" type="button" data-bs-target="#makilingCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+
+            <button class="carousel-control-next" type="button" data-bs-target="#makilingCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+
+        </div>
+    </div>
+
+    <footer class="text-center py-3 bg-light">
+        <p class="m-0">&copy; 2025 Mount Makiling Showcase</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
